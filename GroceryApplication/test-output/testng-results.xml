@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-05T07:52:44 IST" name="Default suite" finished-at="2025-11-05T07:52:55 IST" duration-ms="11012">
+  <suite started-at="2025-11-07T07:56:33 IST" name="Default suite" finished-at="2025-11-07T07:56:42 IST" duration-ms="9301">
     <groups>
     </groups>
-    <test started-at="2025-11-05T07:52:44 IST" name="Default test" finished-at="2025-11-05T07:52:55 IST" duration-ms="11012">
-      <class name="testscript.NewsTest">
-        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:testscript.NewsTest@2a65fe7c]" started-at="2025-11-05T07:52:44 IST" name="initialiseBrowser" finished-at="2025-11-05T07:52:47 IST" duration-ms="3648" status="PASS">
+    <test started-at="2025-11-07T07:56:33 IST" name="Default test" finished-at="2025-11-07T07:56:42 IST" duration-ms="9301">
+      <class name="testscript.LoginTest">
+        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:testscript.LoginTest@368f2016]" started-at="2025-11-07T07:56:33 IST" name="initialiseBrowser" finished-at="2025-11-07T07:56:37 IST" duration-ms="4903" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseBrowser -->
-        <test-method signature="addNews()[pri:0, instance:testscript.NewsTest@2a65fe7c]" started-at="2025-11-05T07:52:47 IST" name="addNews" description="Test case for news addition" finished-at="2025-11-05T07:52:55 IST" duration-ms="7291" status="PASS">
+        <test-method signature="verifyLoginwithValidCredentials()[pri:1, instance:testscript.LoginTest@368f2016]" started-at="2025-11-07T07:56:37 IST" name="verifyLoginwithValidCredentials" description="To verify the login using valid credentials" finished-at="2025-11-07T07:56:42 IST" duration-ms="4289" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addNews -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testscript.NewsTest@2a65fe7c]" started-at="2025-11-05T07:52:55 IST" name="closeBrowser" finished-at="2025-11-05T07:52:55 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyLoginwithValidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testscript.LoginTest@368f2016]" started-at="2025-11-07T07:56:42 IST" name="closeBrowser" finished-at="2025-11-07T07:56:42 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- testscript.NewsTest -->
+      </class> <!-- testscript.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
