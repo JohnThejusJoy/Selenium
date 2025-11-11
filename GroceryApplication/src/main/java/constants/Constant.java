@@ -1,0 +1,8 @@
+package constants;
+
+public class Constant {
+	//System.getProperty: Returns the path of eclipse directory
+public static final String TESTDATAFILE = System.getProperty("user.dir")+"\\src\\test\\resources\\TestData.xlsx";
+public static final String SHEETNAME = System.getProperty("user.dir")+"loginsheet";
+
+}

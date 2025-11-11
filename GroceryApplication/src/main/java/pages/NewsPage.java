@@ -52,4 +52,8 @@ public void resetButton()
 	WebElement resetbtn = driver.findElement(By.xpath("//a[@class='btn btn-rounded btn-warning']"));
 	resetbtn.click();
 }
+public boolean isAlertDisplayed() {
+	WebElement alert = driver.findElement(By.xpath("//div[@class='alert alert-success alert-dismissible']"));
+	return alert.isDisplayed();
+}
 }
