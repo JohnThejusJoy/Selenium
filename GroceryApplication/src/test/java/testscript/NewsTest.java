@@ -2,13 +2,12 @@ package testscript;
 
 import java.io.IOException;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.TestNGBase;
 import constants.Constant;
+import constants.Messages;
 import pages.LoginPage;
 import pages.NewsPage;
 import utilities.ExcelUtility;
@@ -28,7 +27,7 @@ public class NewsTest extends TestNGBase{
 		newsPage.newsText();
 		newsPage.saveNews();
 		boolean isalertDisplayed = newsPage.isAlertDisplayed();
-		Assert.assertTrue(isalertDisplayed);
+		Assert.assertTrue(isalertDisplayed, Messages.ADD_NEWS_ASSERT);
 	}
 	@Test(description = "Test case for news search")
 public void searchNews() throws IOException {
@@ -45,7 +44,7 @@ public void searchNews() throws IOException {
 		newsPage.searchButton();
 		String actual = driver.getCurrentUrl();
 		String expected = "https://groceryapp.uniqassosiates.com/admin/news/index";
-		Assert.assertEquals(actual, expected);
+		Assert.assertEquals(actual, expected, Messages.SEARCH_NEWS_ASSERT);
 	}
 	@Test(description = "Return to home")
 public void returntoHome() throws IOException {
@@ -60,7 +59,7 @@ public void returntoHome() throws IOException {
 		newsPage.returntoHome();
 		String actual = driver.getCurrentUrl();
 		String expected = "https://groceryapp.uniqassosiates.com/admin/home";
-		Assert.assertEquals(actual, expected);
+		Assert.assertEquals(actual, expected, Messages.RETURN_TO_HOME_ASSERT);
 	}
 	@Test(description = "Reset")
 	public void reset() throws IOException {
@@ -75,7 +74,7 @@ public void returntoHome() throws IOException {
 		newsPage.resetButton();
 		String actual = driver.getCurrentUrl();
 		String expected = "https://groceryapp.uniqassosiates.com/admin/list-news";
-		Assert.assertEquals(actual, expected);
+		Assert.assertEquals(actual, expected, Messages.RESET_ASSERT);
 	}
 
 }

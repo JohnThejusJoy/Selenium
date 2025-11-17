@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import base.TestNGBase;
 import constants.Constant;
+import constants.Messages;
 import pages.AdminPage;
 import pages.LoginPage;
 import utilities.ExcelUtility;
@@ -32,6 +33,6 @@ public void createAdmin() throws IOException{
 	adminPage.adminDropdown();
 	adminPage.adminSave();
 	boolean isAlertDisplayed = adminPage.isAlertDisplayed();
-	Assert.assertTrue(isAlertDisplayed);
+	Assert.assertTrue(isAlertDisplayed, Messages.CREATE_ADMIN_ASSERT);
 }
 }

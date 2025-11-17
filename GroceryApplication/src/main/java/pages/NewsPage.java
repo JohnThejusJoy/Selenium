@@ -1,59 +1,70 @@
 package pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import utilities.WaitUtility;
 
 public class NewsPage {
+	WaitUtility waitUtility = new WaitUtility();
 public WebDriver driver;
 public NewsPage(WebDriver driver) {
 	this.driver = driver;
+	PageFactory.initElements(driver, this);
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 }
+@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news' and @class='small-box-footer']") WebElement managenewsbtn;
 public void manageNews() {
-	WebElement managenewsbtn = driver.findElement(By.xpath("//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news' and @class='small-box-footer']"));
 	managenewsbtn.click();
 }
+@FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']") WebElement newnewsbtn;
 public void newNews()
 {
-	WebElement newnewsbtn = driver.findElement(By.xpath("//a[@class='btn btn-rounded btn-danger']"));
 	newnewsbtn.click();	
 }
+@FindBy(xpath = "//textarea[@id='news']") WebElement newstxt;
 public void newsText()
 {
-	WebElement newstxt = driver.findElement(By.xpath("//textarea[@id='news']"));
 	newstxt.sendKeys("Breaking news!");
 }
+@FindBy(xpath = "//button[@type='submit']") WebElement savebtn;
 public void saveNews()
 {
-	WebElement savebtn = driver.findElement(By.xpath("//button[@type='submit']"));
 	savebtn.click();
 }
+@FindBy(xpath = "//a[@class='btn btn-rounded btn-primary']") WebElement searchbtn;
 public void searchButton()
 {
-	WebElement searchbtn = driver.findElement(By.xpath("//a[@class='btn btn-rounded btn-primary']"));
+		waitUtility.waitUntilClickable(driver, searchbtn);
 	searchbtn.click();
 }
+@FindBy(xpath = "//input[@class='form-control']") WebElement searchfield;
 public void searchText() {
-	WebElement searchfield = driver.findElement(By.xpath("//input[@class='form-control']"));
 	searchfield.sendKeys("Breaking");
 }
+@FindBy(xpath = "//button[@class='btn btn-danger btn-fix']") WebElement searchnewsbtn;
 public void searchNews()
 {
-	WebElement searchnewsbtn = driver.findElement(By.xpath("//button[@class='btn btn-danger btn-fix']"));
 	searchnewsbtn.click();
 }
+@FindBy(xpath = "//a[text()='Home']") WebElement homebtn;
 public void returntoHome()
 {
 	WebElement homebtn = driver.findElement(By.xpath("//a[text()='Home']"));
 	homebtn.click();
 }
+@FindBy(xpath = "//a[@class='btn btn-rounded btn-warning']") WebElement resetbtn;
 public void resetButton()
 {
-	WebElement resetbtn = driver.findElement(By.xpath("//a[@class='btn btn-rounded btn-warning']"));
 	resetbtn.click();
 }
+@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']") WebElement alert;
 public boolean isAlertDisplayed() {
-	WebElement alert = driver.findElement(By.xpath("//div[@class='alert alert-success alert-dismissible']"));
 	return alert.isDisplayed();
 }
 }
