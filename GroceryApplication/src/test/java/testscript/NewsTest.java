@@ -13,7 +13,7 @@ import pages.NewsPage;
 import utilities.ExcelUtility;
 
 public class NewsTest extends TestNGBase{
-	@Test(description = "Test case for news addition")
+	@Test(description = "Test case for news addition", groups = {"smoke"})
 	public void addNews() throws IOException {
 		String usernamevalue = ExcelUtility.getStringData(1, 0, Constant.SHEETNAME);//Data Driven approach: reading data from file
 		String passwordvalue = ExcelUtility.getStringData(1, 1, Constant.SHEETNAME);
