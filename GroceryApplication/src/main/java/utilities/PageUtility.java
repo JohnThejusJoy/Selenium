@@ -36,4 +36,7 @@ public class PageUtility {
 		Select select = new Select(element);
 		select.selectByVisibleText(Constant.ADMINNAME);
 	}
+	public boolean alertDisplay(WebElement element) {
+		return element.isDisplayed();
+	}
 }

@@ -2,16 +2,17 @@ package pages;
 
 import java.time.Duration;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.PageUtility;
 import utilities.WaitUtility;
 
 public class NewsPage {
 	WaitUtility waitUtility = new WaitUtility();
+	PageUtility pageUtility = new PageUtility();
 public WebDriver driver;
 public NewsPage(WebDriver driver) {
 	this.driver = driver;
@@ -20,51 +21,50 @@ public NewsPage(WebDriver driver) {
 }
 @FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news' and @class='small-box-footer']") WebElement managenewsbtn;
 public void manageNews() {
-	managenewsbtn.click();
+	pageUtility.clickOnElement(managenewsbtn);
 }
 @FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']") WebElement newnewsbtn;
 public void newNews()
 {
-	newnewsbtn.click();	
+	pageUtility.clickOnElement(newnewsbtn);
 }
 @FindBy(xpath = "//textarea[@id='news']") WebElement newstxt;
 public void newsText()
 {
-	newstxt.sendKeys("Breaking news!");
+	pageUtility.sendDataToElement(newstxt, "Breaking");
 }
 @FindBy(xpath = "//button[@type='submit']") WebElement savebtn;
 public void saveNews()
 {
-	savebtn.click();
+	pageUtility.clickOnElement(savebtn);
 }
 @FindBy(xpath = "//a[@class='btn btn-rounded btn-primary']") WebElement searchbtn;
 public void searchButton()
 {
 		waitUtility.waitUntilClickable(driver, searchbtn);
-	searchbtn.click();
+	pageUtility.clickOnElement(searchbtn);
 }
 @FindBy(xpath = "//input[@class='form-control']") WebElement searchfield;
 public void searchText() {
-	searchfield.sendKeys("Breaking");
+	pageUtility.sendDataToElement(searchfield, "Breaking");
 }
 @FindBy(xpath = "//button[@class='btn btn-danger btn-fix']") WebElement searchnewsbtn;
 public void searchNews()
 {
-	searchnewsbtn.click();
+	pageUtility.clickOnElement(searchnewsbtn);
 }
 @FindBy(xpath = "//a[text()='Home']") WebElement homebtn;
 public void returntoHome()
 {
-	WebElement homebtn = driver.findElement(By.xpath("//a[text()='Home']"));
-	homebtn.click();
+	pageUtility.clickOnElement(homebtn);
 }
 @FindBy(xpath = "//a[@class='btn btn-rounded btn-warning']") WebElement resetbtn;
 public void resetButton()
 {
-	resetbtn.click();
+	pageUtility.clickOnElement(resetbtn);
 }
 @FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']") WebElement alert;
-public boolean isAlertDisplayed() {
-	return alert.isDisplayed();
+public void isAlertDisplayed() {
+	pageUtility.alertDisplay(alert);
 }
 }

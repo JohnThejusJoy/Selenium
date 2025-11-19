@@ -7,10 +7,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.PageUtility;
 import utilities.WaitUtility;
 
 public class HomePage {
 	WaitUtility waitUtility = new WaitUtility();
+	PageUtility pageUtility = new PageUtility();
 	public WebDriver driver;
 public HomePage(WebDriver driver) {
 	this.driver = driver;
@@ -20,11 +22,11 @@ public HomePage(WebDriver driver) {
 @FindBy(xpath = "//a[@data-toggle='dropdown']") WebElement adminbtn;
 public void adminButton() {
 	waitUtility.waitUntilClickable(driver, adminbtn);
-	adminbtn.click();
+pageUtility.clickOnElement(adminbtn);
 }
 @FindBy(xpath = "//i[@class='ace-icon fa fa-power-off']") WebElement logoutbtn;
 public void logOut() {
 	waitUtility.waitUntilClickable(driver, logoutbtn);
-	logoutbtn.click();
+	pageUtility.clickOnElement(logoutbtn);
 }
 }
