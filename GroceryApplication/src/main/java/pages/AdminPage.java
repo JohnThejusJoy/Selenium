@@ -14,6 +14,7 @@ import utilities.WaitUtility;
 
 public class AdminPage {
 	WaitUtility waitUtility = new WaitUtility();
+	
 public WebDriver driver;
 public AdminPage(WebDriver driver) {
 	this.driver = driver;
