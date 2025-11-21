@@ -35,7 +35,6 @@ public void searchNews() throws IOException {
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.enterusername(usernamevalue).enterPassword(passwordvalue);
 		homePage = loginPage.signIn();
-		NewsPage newsPage = new NewsPage(driver);
 		newsPage = homePage.manageNews();
 		newsPage.searchNews().searchText().searchButton();
 		String actual = driver.getCurrentUrl();
@@ -49,7 +48,6 @@ public void returntoHome() throws IOException {
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.enterusername(usernamevalue).enterPassword(passwordvalue);
 		homePage = loginPage.signIn();
-		NewsPage newsPage = new NewsPage(driver);
 		newsPage = homePage.manageNews();
 		homePage = newsPage.returntoHome();
 		String actual = driver.getCurrentUrl();
@@ -63,7 +61,6 @@ public void returntoHome() throws IOException {
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.enterusername(usernamevalue).enterPassword(passwordvalue);
 		homePage = loginPage.signIn();
-		NewsPage newsPage = new NewsPage(driver);
 		newsPage = homePage.manageNews();
 		newsPage.resetButton();
 		String actual = driver.getCurrentUrl();
