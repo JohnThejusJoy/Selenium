@@ -15,6 +15,7 @@ import utilities.ExcelUtility;
 
 public class NewsTest extends TestNGBase{
 	public HomePage homePage;
+	public NewsPage newsPage;
 	@Test(description = "Test case for news addition", groups = {"smoke"})
 	public void addNews() throws IOException {
 		String usernamevalue = ExcelUtility.getStringData(1, 0, Constant.SHEETNAME);//Data Driven approach: reading data from file
@@ -22,8 +23,8 @@ public class NewsTest extends TestNGBase{
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.enterusername(usernamevalue).enterPassword(passwordvalue);
 		homePage = loginPage.signIn();
-		NewsPage newsPage = new NewsPage(driver);
-		newsPage.manageNews().newNews().newsText().saveNews();
+		newsPage = homePage.manageNews();
+		newsPage.newNews().newsText().saveNews();
 		boolean isalertDisplayed = newsPage.isAlertDisplayed();
 		Assert.assertTrue(isalertDisplayed, Messages.ADD_NEWS_ASSERT);
 	}
@@ -35,7 +36,8 @@ public void searchNews() throws IOException {
 		loginPage.enterusername(usernamevalue).enterPassword(passwordvalue);
 		homePage = loginPage.signIn();
 		NewsPage newsPage = new NewsPage(driver);
-		newsPage.manageNews().searchNews().searchText().searchButton();
+		newsPage = homePage.manageNews();
+		newsPage.searchNews().searchText().searchButton();
 		String actual = driver.getCurrentUrl();
 		String expected = "https://groceryapp.uniqassosiates.com/admin/news/index";
 		Assert.assertEquals(actual, expected, Messages.SEARCH_NEWS_ASSERT);
@@ -48,7 +50,7 @@ public void returntoHome() throws IOException {
 		loginPage.enterusername(usernamevalue).enterPassword(passwordvalue);
 		homePage = loginPage.signIn();
 		NewsPage newsPage = new NewsPage(driver);
-		newsPage.manageNews();
+		newsPage = homePage.manageNews();
 		homePage = newsPage.returntoHome();
 		String actual = driver.getCurrentUrl();
 		String expected = "https://groceryapp.uniqassosiates.com/admin/home";
@@ -62,7 +64,8 @@ public void returntoHome() throws IOException {
 		loginPage.enterusername(usernamevalue).enterPassword(passwordvalue);
 		homePage = loginPage.signIn();
 		NewsPage newsPage = new NewsPage(driver);
-		newsPage.manageNews().resetButton();
+		newsPage = homePage.manageNews();
+		newsPage.resetButton();
 		String actual = driver.getCurrentUrl();
 		String expected = "https://groceryapp.uniqassosiates.com/admin/list-news";
 		Assert.assertEquals(actual, expected, Messages.RESET_ASSERT);

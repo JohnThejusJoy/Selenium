@@ -36,5 +36,10 @@ public AdminPage adminInfo() {
 	pageUtility.clickOnElement(manageadmininfo);
 	return new AdminPage(driver);
 }
+@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news' and @class='small-box-footer']") WebElement managenewsbtn;
+public NewsPage manageNews() {
+	pageUtility.clickOnElement(managenewsbtn);
+	return new NewsPage(driver);
+}
 //chaning void to adminpage
 }

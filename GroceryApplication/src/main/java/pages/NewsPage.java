@@ -19,11 +19,7 @@ public NewsPage(WebDriver driver) {
 	PageFactory.initElements(driver, this);
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 }
-@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news' and @class='small-box-footer']") WebElement managenewsbtn;
-public NewsPage manageNews() {
-	pageUtility.clickOnElement(managenewsbtn);
-	return this;
-}
+
 @FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']") WebElement newnewsbtn;
 public NewsPage newNews()
 {
