@@ -20,13 +20,21 @@ public HomePage(WebDriver driver) {
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 }
 @FindBy(xpath = "//a[@data-toggle='dropdown']") WebElement adminbtn;
-public void adminButton() {
+public AdminPage adminButton() {
 	waitUtility.waitUntilClickable(driver, adminbtn);
 pageUtility.clickOnElement(adminbtn);
+return new AdminPage(driver);
 }
 @FindBy(xpath = "//i[@class='ace-icon fa fa-power-off']") WebElement logoutbtn;
-public void logOut() {
+public LoginPage logOut() {
 	waitUtility.waitUntilClickable(driver, logoutbtn);
 	pageUtility.clickOnElement(logoutbtn);
+	return new LoginPage(driver);
 }
+@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and @class='small-box-footer']") WebElement manageadmininfo;
+public AdminPage adminInfo() {
+	pageUtility.clickOnElement(manageadmininfo);
+	return new AdminPage(driver);
+}
+//chaning void to adminpage
 }

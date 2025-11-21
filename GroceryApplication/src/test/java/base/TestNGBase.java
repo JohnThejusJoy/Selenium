@@ -19,7 +19,7 @@ import constants.Constant;
 import utilities.ScreenshotUtility;
 
 public class TestNGBase {
-	Properties prop;
+	Properties prop;//Declaring Properties class as a global var
 	FileInputStream f;
 	public WebDriver driver;
 	@BeforeMethod(alwaysRun = true)
@@ -27,7 +27,7 @@ public class TestNGBase {
 	public void initialiseBrowser(String browser) throws Exception{
 		prop = new Properties();
 		f= new FileInputStream(Constant.CONFIGFILE);
-		prop.load(f);
+		prop.load(f);//load any file with .properties
 		if(browser.equalsIgnoreCase("chrome")) {
 			ChromeOptions options = new ChromeOptions();//Change settings within Chrome
 			Map<String,Object> prefs=new HashMap<>();

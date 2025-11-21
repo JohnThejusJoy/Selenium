@@ -19,33 +19,36 @@ public AdminPage(WebDriver driver) {
 	PageFactory.initElements(driver, this);
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 }
-@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and @class='small-box-footer']") WebElement manageadmininfo;
-public void adminInfo() {
-	pageUtility.clickOnElement(manageadmininfo);
-}
+//remmoving admininfo to home since its in home
+
 @FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']") WebElement newadmin;
-public void newAdmin() {
+public AdminPage newAdmin() {
 	waitUtility.waitUntilClickable(driver, newadmin);
 pageUtility.clickOnElement(newadmin);
+return this;
 }
 @FindBy(xpath = "//input[@type='text' and @class='form-control' and @id='username']") WebElement adminusername;
-public void adminUsername(String username) {
+public AdminPage adminUsername(String username) {
 	pageUtility.sendDataToElement(adminusername, username);
+	return this;
 }
 @FindBy(xpath = "//input[@type='password' and @class='form-control' and @id='password']") WebElement adminpassword;
-public void adminPassword(String password) {
+public AdminPage adminPassword(String password) {
 	pageUtility.sendDataToElement(adminpassword, password);
+	return this;
 }
 @FindBy(xpath = "//select[@class='form-control' and @id='user_type']") WebElement dropdown;
-public void adminDropdown() {
+public AdminPage adminDropdown() {
 	pageUtility.selectData(dropdown);
+	return this;
 }
 @FindBy(xpath = "//button[@type='submit' and @class='btn btn-block-sm btn-danger' and @name='Create']") WebElement savebtn;
-public void adminSave() {
+public AdminPage adminSave() {
 pageUtility.clickOnElement(savebtn);
+return this;
 }
 @FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']") WebElement alert;
-public void isAlertDisplayed() {
-	pageUtility.alertDisplay(alert);
+public boolean isAlertDisplayed() {
+	return pageUtility.alertDisplay(alert);
 }
 }

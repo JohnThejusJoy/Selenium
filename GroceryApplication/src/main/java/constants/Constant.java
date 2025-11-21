@@ -1,4 +1,4 @@
-package constants;
+	package constants;
 
 public class Constant {
 	//System.getProperty: Returns the path of eclipse directory

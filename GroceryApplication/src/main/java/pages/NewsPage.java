@@ -20,51 +20,60 @@ public NewsPage(WebDriver driver) {
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 }
 @FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news' and @class='small-box-footer']") WebElement managenewsbtn;
-public void manageNews() {
+public NewsPage manageNews() {
 	pageUtility.clickOnElement(managenewsbtn);
+	return this;
 }
 @FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']") WebElement newnewsbtn;
-public void newNews()
+public NewsPage newNews()
 {
 	pageUtility.clickOnElement(newnewsbtn);
+	return this;
 }
 @FindBy(xpath = "//textarea[@id='news']") WebElement newstxt;
-public void newsText()
+public NewsPage newsText()
 {
 	pageUtility.sendDataToElement(newstxt, "Breaking");
+	return this;
 }
 @FindBy(xpath = "//button[@type='submit']") WebElement savebtn;
-public void saveNews()
+public NewsPage saveNews()
 {
 	pageUtility.clickOnElement(savebtn);
+	return this;
 }
 @FindBy(xpath = "//a[@class='btn btn-rounded btn-primary']") WebElement searchbtn;
-public void searchButton()
+public NewsPage searchButton()
 {
 		waitUtility.waitUntilClickable(driver, searchbtn);
 	pageUtility.clickOnElement(searchbtn);
+	return this;
 }
 @FindBy(xpath = "//input[@class='form-control']") WebElement searchfield;
-public void searchText() {
+public NewsPage searchText() {
 	pageUtility.sendDataToElement(searchfield, "Breaking");
+	return this;
 }
 @FindBy(xpath = "//button[@class='btn btn-danger btn-fix']") WebElement searchnewsbtn;
-public void searchNews()
+public NewsPage searchNews()
 {
 	pageUtility.clickOnElement(searchnewsbtn);
+	return this;
 }
 @FindBy(xpath = "//a[text()='Home']") WebElement homebtn;
-public void returntoHome()
+public HomePage returntoHome()
 {
 	pageUtility.clickOnElement(homebtn);
+	return new HomePage(driver);
 }
 @FindBy(xpath = "//a[@class='btn btn-rounded btn-warning']") WebElement resetbtn;
-public void resetButton()
+public NewsPage resetButton()
 {
 	pageUtility.clickOnElement(resetbtn);
+	return this;
 }
 @FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']") WebElement alert;
-public void isAlertDisplayed() {
-	pageUtility.alertDisplay(alert);
+public boolean isAlertDisplayed() {
+	return pageUtility.alertDisplay(alert);
 }
 }

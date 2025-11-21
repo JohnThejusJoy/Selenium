@@ -22,18 +22,25 @@ public class LoginPage {
 	}
 	//Implementing PF
 	@FindBy(xpath = "//input[@name='username']") WebElement username;
-public void enterusername(String usernamevalue) {
+public LoginPage enterusername(String usernamevalue) {
+	//chain void oto Loginpage
 	//username.sendKeys(usernamevalue);
 	pageUtility.sendDataToElement(username, usernamevalue);
+	return this;
 }
 @FindBy(xpath = "//input[@name='password']") WebElement password;
-public void enterPassword(String passwordvalue) {
+public LoginPage enterPassword(String passwordvalue) {
 pageUtility.sendDataToElement(password, passwordvalue);
+return this;
 }
 @FindBy(xpath = "//button[@type='submit']") WebElement signin;
-public void signIn() {
+//since signin navigates to homepagge
+public HomePage signIn() {
 waitUtility.waitUntilClickable(driver, signin);	
 pageUtility.clickOnElement(signin);
+return new HomePage(driver);//since homepage is a parametereised constructor, object initialisation
 }
 //Page Factory: Design pattern to avoid repetition
+//all others within loginpage, signin navigatesto homepage
+//chaining of classes
 }
