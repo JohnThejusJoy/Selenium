@@ -66,24 +66,10 @@ public class Listener implements ITestListener{
 	
 	  public void onTestFailure(ITestResult result) {
 	  
-	  ITestListener.super.onTestFailure(result); extentTest.get().log(Status.FAIL,
-	  "Test Failed"); extentTest.get().fail(result.getThrowable()); WebDriver
-	  driver = null; String testMethodName = result.getMethod().getMethodName();
-	  try { driver = (WebDriver)
-	  result.getTestClass().getRealClass().getDeclaredField("driver")
-	  .get(result.getInstance()); } catch (IllegalArgumentException e) {
-	  
-	  e.printStackTrace(); } catch (IllegalAccessException e) {
-	  
-	  e.printStackTrace(); } catch (NoSuchFieldException e) {
-	  
-	  e.printStackTrace(); } catch (SecurityException e) {
-	  
-	  e.printStackTrace(); }
-	  
-	  try { driver = (WebDriver)
-	  result.getTestClass().getRealClass().getDeclaredField("driver")
-	  .get(result.getInstance()); } catch (Exception e) { }
+	  ITestListener.super.onTestFailure(result);
+	  extentTest.get().log(Status.FAIL,
+	  "Test Failed");
+	  extentTest.get().fail(result.getThrowable());
 	  }
 	 
 

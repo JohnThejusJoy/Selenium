@@ -29,7 +29,7 @@ public class NewsTest extends TestNGBase{
 		Assert.assertTrue(isalertDisplayed, Messages.ADD_NEWS_ASSERT);
 	}
 	@Test(description = "Test case for news search")
-public void searchNews() throws IOException {
+public void searchNews() throws IOException, InterruptedException {
 		String usernamevalue = ExcelUtility.getStringData(1, 0, Constant.SHEETNAME);//Data Driven approach: reading data from file
 		String passwordvalue = ExcelUtility.getStringData(1, 1, Constant.SHEETNAME);
 		LoginPage loginPage = new LoginPage(driver);

@@ -13,7 +13,7 @@ public class PageUtility {
 	public void clickOnElement(WebElement element) {
 		element.click();
 	}
-	
+	//can be direclty used insied pageclss
 	public void sendDataToElement(WebElement element,String text) {
 		element.sendKeys(text);
 	}
