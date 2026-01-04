@@ -1,167 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="11" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-02T09:24:53 IST" name="Suite" finished-at="2025-12-02T09:26:27 IST" duration-ms="94634">
+  <suite started-at="2026-01-04T12:11:03 IST" name="Default suite" finished-at="2026-01-04T12:11:03 IST" duration-ms="75">
     <groups>
-      <group name="smoke">
-        <method signature="NewsTest.addNews()[pri:0, instance:testscript.NewsTest@50029372]" name="addNews" class="testscript.NewsTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-12-02T09:24:53 IST" name="Test" finished-at="2025-12-02T09:26:27 IST" duration-ms="94634">
+    <test started-at="2026-01-04T12:11:03 IST" name="Default test" finished-at="2026-01-04T12:11:03 IST" duration-ms="75">
       <class name="testscript.NewsTest">
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@50029372]" started-at="2025-12-02T09:25:14 IST" name="initialiseBrowser" finished-at="2025-12-02T09:25:17 IST" duration-ms="2994" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="addNews()[pri:0, instance:testscript.NewsTest@50029372]" started-at="2025-12-02T09:25:17 IST" name="addNews" description="Test case for news addition" finished-at="2025-12-02T09:25:23 IST" duration-ms="5448" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNews -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testscript.NewsTest@50029372]" started-at="2025-12-02T09:25:23 IST" name="closeBrowser" finished-at="2025-12-02T09:25:23 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@50029372]" started-at="2025-12-02T09:25:23 IST" name="driverQuit" finished-at="2025-12-02T09:25:23 IST" duration-ms="675" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addNews status=SUCCESS method=NewsTest.addNews()[pri:0, instance:testscript.NewsTest@50029372] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@50029372]" started-at="2025-12-02T09:25:23 IST" name="initialiseBrowser" finished-at="2025-12-02T09:25:27 IST" duration-ms="3598" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="reset()[pri:0, instance:testscript.NewsTest@50029372]" started-at="2025-12-02T09:25:27 IST" name="reset" description="Reset" finished-at="2025-12-02T09:25:32 IST" duration-ms="5366" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reset -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testscript.NewsTest@50029372]" started-at="2025-12-02T09:25:32 IST" name="closeBrowser" finished-at="2025-12-02T09:25:32 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@50029372]" started-at="2025-12-02T09:25:32 IST" name="driverQuit" finished-at="2025-12-02T09:25:33 IST" duration-ms="860" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=reset status=SUCCESS method=NewsTest.reset()[pri:0, instance:testscript.NewsTest@50029372] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@50029372]" started-at="2025-12-02T09:25:33 IST" name="initialiseBrowser" finished-at="2025-12-02T09:25:37 IST" duration-ms="3489" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="returntoHome()[pri:0, instance:testscript.NewsTest@50029372]" started-at="2025-12-02T09:25:37 IST" name="returntoHome" description="Return to home" finished-at="2025-12-02T09:25:41 IST" duration-ms="4003" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- returntoHome -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testscript.NewsTest@50029372]" started-at="2025-12-02T09:25:41 IST" name="closeBrowser" finished-at="2025-12-02T09:25:41 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@50029372]" started-at="2025-12-02T09:25:41 IST" name="driverQuit" finished-at="2025-12-02T09:25:41 IST" duration-ms="239" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=returntoHome status=SUCCESS method=NewsTest.returntoHome()[pri:0, instance:testscript.NewsTest@50029372] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@50029372]" started-at="2025-12-02T09:25:41 IST" name="initialiseBrowser" finished-at="2025-12-02T09:25:44 IST" duration-ms="3157" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="searchNews()[pri:0, instance:testscript.NewsTest@50029372]" started-at="2025-12-02T09:25:44 IST" name="searchNews" description="Test case for news search" finished-at="2025-12-02T09:25:57 IST" duration-ms="12957" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.NewsTest@59474f18]" started-at="2026-01-04T12:11:03 IST" name="initialiseBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1767508863804" status="FAIL">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=142.0.7444.176)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f27870a5c4ec7b99aaf9bb281530dfde, clickElement {id=f.354096EC1F171866F40E4DC9423ED3A5.d.ADA5A82CFF8DBB08D35733EC4C8A4658.e.36}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\Thejus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56877}, goog:processID: 15740, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56877/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f27870a5c4ec7b99aaf9bb281530dfde)] -> xpath: //button[@class='btn btn-danger btn-fix']]
-Session ID: f27870a5c4ec7b99aaf9bb281530dfde]]>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method initialiseBrowser but has not been marked @Optional or defined
+in C:\Users\Thejus\AppData\Local\Temp\testng-eclipse--792599984\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=142.0.7444.176)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f27870a5c4ec7b99aaf9bb281530dfde, clickElement {id=f.354096EC1F171866F40E4DC9423ED3A5.d.ADA5A82CFF8DBB08D35733EC4C8A4658.e.36}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\Thejus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56877}, goog:processID: 15740, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56877/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f27870a5c4ec7b99aaf9bb281530dfde)] -> xpath: //button[@class='btn btn-danger btn-fix']]
-Session ID: f27870a5c4ec7b99aaf9bb281530dfde
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-at utilities.PageUtility.clickOnElement(PageUtility.java:14)
-at pages.NewsPage.searchNews(NewsPage.java:56)
-at testscript.NewsTest.searchNews(NewsTest.java:39)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method initialiseBrowser but has not been marked @Optional or defined
+in C:\Users\Thejus\AppData\Local\Temp\testng-eclipse--792599984\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -186,308 +49,115 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="searchNews()[pri:0, instance:testscript.NewsTest@59474f18]" started-at="2026-01-04T12:11:03 IST" name="searchNews" description="Test case for news search" finished-at="2026-01-04T12:11:03 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method initialiseBrowser but has not been marked @Optional or defined
+in C:\Users\Thejus\AppData\Local\Temp\testng-eclipse--792599984\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method initialiseBrowser but has not been marked @Optional or defined
+in C:\Users\Thejus\AppData\Local\Temp\testng-eclipse--792599984\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchNews -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testscript.NewsTest@50029372]" started-at="2025-12-02T09:25:57 IST" name="closeBrowser" finished-at="2025-12-02T09:25:57 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testscript.NewsTest@59474f18]" started-at="2026-01-04T12:11:03 IST" name="closeBrowser" finished-at="2026-01-04T12:11:03 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@50029372]" started-at="2025-12-02T09:25:57 IST" name="driverQuit" finished-at="2025-12-02T09:25:58 IST" duration-ms="731" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@59474f18]" started-at="2026-01-04T12:11:03 IST" name="driverQuit" finished-at="2026-01-04T12:11:03 IST" duration-ms="4" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchNews status=FAILURE method=NewsTest.searchNews()[pri:0, instance:testscript.NewsTest@50029372] output={null}]]]>
+                <![CDATA[[TestResult name=searchNews status=SKIP method=NewsTest.searchNews()[pri:0, instance:testscript.NewsTest@59474f18] output={null}]]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
+at base.TestNGBase.driverQuit(TestNGBase.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:622)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
       </class> <!-- testscript.NewsTest -->
-      <class name="testscript.HomeTest">
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.HomeTest@38145825]" started-at="2025-12-02T09:24:53 IST" name="initialiseBrowser" finished-at="2025-12-02T09:24:57 IST" duration-ms="4030" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="verifyLogout()[pri:1, instance:testscript.HomeTest@38145825]" started-at="2025-12-02T09:24:57 IST" name="verifyLogout" description="Logout function" finished-at="2025-12-02T09:25:02 IST" duration-ms="5246" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testscript.HomeTest@38145825]" started-at="2025-12-02T09:25:02 IST" name="closeBrowser" finished-at="2025-12-02T09:25:02 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.HomeTest@38145825]" started-at="2025-12-02T09:25:02 IST" name="driverQuit" finished-at="2025-12-02T09:25:03 IST" duration-ms="779" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLogout status=SUCCESS method=HomeTest.verifyLogout()[pri:1, instance:testscript.HomeTest@38145825] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-      </class> <!-- testscript.HomeTest -->
-      <class name="testscript.AdminTest">
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.AdminTest@18f8cd79]" started-at="2025-12-02T09:25:03 IST" name="initialiseBrowser" finished-at="2025-12-02T09:25:06 IST" duration-ms="2972" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="createAdmin()[pri:0, instance:testscript.AdminTest@18f8cd79]" started-at="2025-12-02T09:25:06 IST" name="createAdmin" description="To create an Admin user" finished-at="2025-12-02T09:25:14 IST" duration-ms="8363" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAdmin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testscript.AdminTest@18f8cd79]" started-at="2025-12-02T09:25:14 IST" name="closeBrowser" finished-at="2025-12-02T09:25:14 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.AdminTest@18f8cd79]" started-at="2025-12-02T09:25:14 IST" name="driverQuit" finished-at="2025-12-02T09:25:14 IST" duration-ms="243" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=createAdmin status=SUCCESS method=AdminTest.createAdmin()[pri:0, instance:testscript.AdminTest@18f8cd79] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-      </class> <!-- testscript.AdminTest -->
-      <class name="testscript.LoginTest">
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:25:58 IST" name="initialiseBrowser" finished-at="2025-12-02T09:26:01 IST" duration-ms="3189" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="verifyLoginwithValidCredentials()[pri:1, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:01 IST" name="verifyLoginwithValidCredentials" description="To verify the login using valid credentials" finished-at="2025-12-02T09:26:03 IST" duration-ms="2170" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginwithValidCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:03 IST" name="closeBrowser" finished-at="2025-12-02T09:26:03 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:03 IST" name="driverQuit" finished-at="2025-12-02T09:26:04 IST" duration-ms="326" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginwithValidCredentials status=SUCCESS method=LoginTest.verifyLoginwithValidCredentials()[pri:1, instance:testscript.LoginTest@e3b3b2f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:04 IST" name="initialiseBrowser" finished-at="2025-12-02T09:26:07 IST" duration-ms="3246" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="verifyLoginInvalidUsernameValidPassword()[pri:2, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:07 IST" name="verifyLoginInvalidUsernameValidPassword" description="To verify the login using invalid username and valid password" finished-at="2025-12-02T09:26:08 IST" duration-ms="1518" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginInvalidUsernameValidPassword -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:08 IST" name="closeBrowser" finished-at="2025-12-02T09:26:08 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:08 IST" name="driverQuit" finished-at="2025-12-02T09:26:09 IST" duration-ms="1077" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginInvalidUsernameValidPassword status=SUCCESS method=LoginTest.verifyLoginInvalidUsernameValidPassword()[pri:2, instance:testscript.LoginTest@e3b3b2f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:09 IST" name="initialiseBrowser" finished-at="2025-12-02T09:26:12 IST" duration-ms="2971" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="verifyLoginValidUsernameInvalidPassword()[pri:3, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:12 IST" name="verifyLoginValidUsernameInvalidPassword" description="To verify the login using valid username and invalid password" finished-at="2025-12-02T09:26:14 IST" duration-ms="1367" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginValidUsernameInvalidPassword -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:14 IST" name="closeBrowser" finished-at="2025-12-02T09:26:14 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:14 IST" name="driverQuit" finished-at="2025-12-02T09:26:14 IST" duration-ms="492" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginValidUsernameInvalidPassword status=SUCCESS method=LoginTest.verifyLoginValidUsernameInvalidPassword()[pri:3, instance:testscript.LoginTest@e3b3b2f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:14 IST" name="initialiseBrowser" finished-at="2025-12-02T09:26:17 IST" duration-ms="3167" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="verifyLoginInvalidCredentials(java.lang.String,java.lang.String)[pri:4, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:17 IST" name="verifyLoginInvalidCredentials" description="To verify the login using invalid credentials" data-provider="loginProvider" finished-at="2025-12-02T09:26:18 IST" duration-ms="1022" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginInvalidCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:18 IST" name="closeBrowser" finished-at="2025-12-02T09:26:18 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:18 IST" name="driverQuit" finished-at="2025-12-02T09:26:19 IST" duration-ms="244" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginInvalidCredentials status=SUCCESS method=LoginTest.verifyLoginInvalidCredentials(java.lang.String,java.lang.String)[pri:4, instance:testscript.LoginTest@e3b3b2f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:19 IST" name="initialiseBrowser" finished-at="2025-12-02T09:26:22 IST" duration-ms="2869" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="verifyLoginInvalidCredentials(java.lang.String,java.lang.String)[pri:4, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:22 IST" name="verifyLoginInvalidCredentials" description="To verify the login using invalid credentials" data-provider="loginProvider" finished-at="2025-12-02T09:26:22 IST" duration-ms="857" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[username]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pass]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginInvalidCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:22 IST" name="closeBrowser" finished-at="2025-12-02T09:26:22 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:22 IST" name="driverQuit" finished-at="2025-12-02T09:26:23 IST" duration-ms="267" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginInvalidCredentials status=SUCCESS method=LoginTest.verifyLoginInvalidCredentials(java.lang.String,java.lang.String)[pri:4, instance:testscript.LoginTest@e3b3b2f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:23 IST" name="initialiseBrowser" finished-at="2025-12-02T09:26:26 IST" duration-ms="3077" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="verifyLoginInvalidCredentials(java.lang.String,java.lang.String)[pri:4, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:26 IST" name="verifyLoginInvalidCredentials" description="To verify the login using invalid credentials" data-provider="loginProvider" finished-at="2025-12-02T09:26:27 IST" duration-ms="1104" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginInvalidCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:27 IST" name="closeBrowser" finished-at="2025-12-02T09:26:27 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@e3b3b2f]" started-at="2025-12-02T09:26:27 IST" name="driverQuit" finished-at="2025-12-02T09:26:27 IST" duration-ms="312" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginInvalidCredentials status=SUCCESS method=LoginTest.verifyLoginInvalidCredentials(java.lang.String,java.lang.String)[pri:4, instance:testscript.LoginTest@e3b3b2f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-      </class> <!-- testscript.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

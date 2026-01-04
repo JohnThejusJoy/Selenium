@@ -36,7 +36,7 @@ public void searchNews() throws IOException, InterruptedException {
 		loginPage.enterusername(usernamevalue).enterPassword(passwordvalue);
 		homePage = loginPage.signIn();
 		newsPage = homePage.manageNews();
-		newsPage.searchNews().searchText().searchButton();
+		newsPage.searchButton().searchText().searchNews();
 		String actual = driver.getCurrentUrl();
 		String expected = "https://groceryapp.uniqassosiates.com/admin/news/index";
 		Assert.assertEquals(actual, expected, Messages.SEARCH_NEWS_ASSERT);
