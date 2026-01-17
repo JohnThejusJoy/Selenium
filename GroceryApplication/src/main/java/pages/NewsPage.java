@@ -50,7 +50,7 @@ public NewsPage searchText() {
 	pageUtility.sendDataToElement(searchfield, "Breaking");
 	return this;
 }
-@FindBy(xpath = "//a[@class='btn btn-danger btn-fix']") WebElement searchnewsbtn;
+@FindBy(xpath = "//button[@class='btn btn-danger btn-fix']") WebElement searchnewsbtn;
 public NewsPage searchNews()
 {
 	pageUtility.clickOnElement(searchnewsbtn);
